@@ -35,25 +35,63 @@
       type="text/css"
     />
 
-    <!-- tailwind v4 -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- tailwind v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- tailwind custom css -->
-    <style type="text/tailwindcss">
-      @theme {
-        --color-pet-accent: #ffdc26;
-        --color-pet-2nd: #fff9f4;
-        --color-pet-back: #f9df8a;
-
-        --font-sora: Sora, serif;
-        --font-adlam: ADLaM Display, serif;
-      }
-    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "pet-accent": "#ffdc26",
+              "pet-2nd": "#fff9f4",
+              "pet-back": "#f9df8a",
+            },
+            fontFamily: {
+              sora: ["Sora", "serif"],
+              adlam: ["ADLaM Display", "serif"],
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-sora">
     <!-- header section start here -->
-    <header class="container mx-auto">
+    <header class="md:container mx-auto">
       <!-- navbar start here -->
+      <nav>
+        <div class="navbar bg-color-2nd">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">Browse4Pets</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">Login</a>
+            <a class="btn">Register</a>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- main section start here -->
     <main></main>
