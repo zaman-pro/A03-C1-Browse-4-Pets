@@ -143,7 +143,7 @@
             furry friends. Shop now and make tails wag with joy!
           </p>
           <button
-            class="btn bg-pet-accent text-pet-black lg:text-xl p-[10px_30px]"
+            class="btn bg-pet-accent text-pet-black lg:text-xl p-[10px_30px] border-none"
           >
             Find a pet
           </button>
@@ -576,7 +576,82 @@
         </div>
       </div>
     </main>
-    <!-- footer section start here -->
-    <footer></footer>
+
+    <!-- !footer section start here -->
+    <footer
+      class="relative px-4 bg-pet-back min-h-[752px] lg:min-h-[654px] lg:px-36 mt-[405px] lg:max-w-[1600px] mx-auto"
+    >
+      <!-- !footer content -->
+      <div class="flex flex-col gap-9 lg:flex-row pt-[380px]">
+        <!-- !footer left -->
+        <div class="space-y-4 lg:space-y-[30px] lg:flex-1">
+          <div class="flex items-center gap-2 lg:gap-3 lg:self-end">
+            <img
+              class="w-[35px] lg:w-12"
+              src="./c1-assets/logo-footer.png"
+              alt=""
+            />
+            <h3 class="text-xl lg:text-[26px]">
+              Browse<span class="text-orange-300">4</span>Pets
+            </h3>
+          </div>
+
+          <p class="lg:text-xl">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
+        </div>
+
+        <!-- !footer middle -->
+        <div class="space-y-4 lg:space-y-8 lg:flex-1 lg:self-end">
+          <h3 class="lg:text-xl">Find a pet</h3>
+          <h3 class="lg:text-xl">Breeds</h3>
+          <h3 class="lg:text-xl">Contact us</h3>
+        </div>
+
+        <!-- !footer right -->
+        <div class="lg:flex-1 lg:self-end">
+          <h3 class="text-sm">Follow Us</h3>
+          <div class="text-[27px] space-x-5">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- newsletter section -->
+      <div
+        class="absolute top-0 translate-y-[-50%] w-[357px] lg:w-[1320px] flex flex-col gap-8 bg-pet-2nd p-8 rounded-lg lg:rounded-2xl lg:flex-row lg:gap-32 lg:px-[89px] lg:py-[38px] mx-auto"
+      >
+        <!-- news image -->
+        <div>
+          <img src="./c1-assets/cute-pet-mid.png" alt="" />
+        </div>
+
+        <!-- news content -->
+        <div
+          class="flex flex-col items-center lg:justify-center lg:items-start"
+        >
+          <h3 class="font-adlam text-[22px] mb-3 lg:text-4xl lg:mb-5">
+            Get Pawsome News!
+          </h3>
+          <p class="text-base mb-5 lg:mb-[38px] lg:text-xl text-center">
+            Exclusive training tips, ticks, product deals and more.
+          </p>
+          <input
+            type="text"
+            placeholder="Enter email...."
+            class="input input-bordered mb-3 lg:mb-[38px] w-full lg:max-w-[90%]"
+          />
+          <button
+            class="btn bg-pet-accent text-pet-black lg:text-xl p-[10px_30px] border-none"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
